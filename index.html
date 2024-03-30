@@ -1,0 +1,288 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/19b72192bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="container">
+        <nav>
+          <input type="checkbox" id="check" style="display: none" />
+          <img src="./images/logo.png" class="logo" alt="" srcset="" />
+          <ul>
+            <li><a onclick="scrollToSection('header')">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About</a></li>
+            <li>
+              <a onclick="scrollToSection('services')">Services</a>
+            </li>
+            <li>
+              <a onclick="scrollToSection('Portfolio')">Portfolio</a>
+            </li>
+            <li>
+              <a onclick="scrollToSection('contact')">Contact</a>
+            </li>
+          </ul>
+          <i
+            class="fa-solid fa-bars burger-menu"
+            id="burger-menu"
+            style="font-size: 32px"
+          ></i>
+        </nav>
+        <div class="menu-burger-item" id="menu-burger-item">
+          <ul>
+            <li><a onclick="scrollToSection('header')">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About</a></li>
+            <li>
+              <a onclick="scrollToSection('services')">Services</a>
+            </li>
+            <li>
+              <a onclick="scrollToSection('Portfolio')">Portfolio</a>
+            </li>
+            <li>
+              <a onclick="scrollToSection('contact')">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span style="color: red">Abdul Rafay</span> <br />from
+            karachi Pakistan👋
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="" srcset="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              exercitationem iure odit debitis laborum, magni eligendi
+              repudiandae modi fuga, neque nesciunt! Obcaecati aspernatur
+              laborum atque mollitia consequuntur maxime voluptatum animi!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links acitve-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfeces</li>
+
+                <li>
+                  <span>Web Developer</span><br />Developing Unique Websites
+                </li>
+
+                <li>
+                  <span>App Development</span><br />Building Andriod/iOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>Fresh / No Professional Experience</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>2024</span><br />Bachelors in Computer Science</li>
+
+                <li><span>2019</span><br />Intermediate in Computer Science</li>
+
+                <li><span>2017</span><br />Matriculation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="service-box">
+            <i
+              class="fa-sharp fa-solid fa-code"
+              style="font-size: 35px; font-weight: bolder"
+            ></i>
+            <div class="text">
+              <h1>Web Design</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                doloremque possimus!
+              </p>
+              <p style="color: rgb(249, 0, 0); cursor: pointer">Learn more</p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <i
+              class="fa-sharp fa-solid fa-crop"
+              style="font-size: 35px; font-weight: bolder"
+            ></i>
+            <div class="text">
+              <h1>Web Design</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                doloremque possimus!
+              </p>
+              <p style="color: rgb(249, 0, 0); cursor: pointer">Learn more</p>
+            </div>
+          </div>
+          <div class="service-box">
+            <i
+              class="fa-solid fa-pen-nib"
+              style="font-size: 35px; font-weight: bolder"
+            ></i>
+            <div class="text">
+              <h1>Web Design</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                doloremque possimus!
+              </p>
+              <p style="color: rgb(249, 0, 0); cursor: pointer">Learn more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="Portfolio" id="Portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="my-works">
+          <div class="work">
+            <img src="./images/work-1.png" alt="" width="300px" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>
+                This app connect you with talented people around the world.
+                Download it Now
+              </p>
+              <a href="#" style="color: white">
+                <i class="fa-solid fa-share-from-square fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" alt="" width="300px" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>
+                This app connect you with talented people around the world.
+                Download it Now
+              </p>
+              <a href="#" style="color: white">
+                <i class="fa-solid fa-share-from-square fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" alt="" width="300px" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>
+                This app connect you with talented people around the world.
+                Download it Now
+              </p>
+              <a href="#" style="color: white">
+                <i class="fa-solid fa-share-from-square fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="box-1">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="links">
+            <p>
+              <a href="mailto:">
+                <i class="fa-solid fa-envelope" style="color: red"></i
+                >&nbsp;&nbsp;&nbsp;rafayabdul508@gmail.com
+              </a>
+            </p>
+            <p>
+              <a href="tel:+923112484593">
+                <i class="fa-solid fa-phone" style="color: red"></i
+                >&nbsp;&nbsp;&nbsp;+923112484593
+              </a>
+            </p>
+
+            <p class="social-icons">
+              <span><i class="fa-brands fa-facebook fa-xl"></i></span>
+              <span><i class="fa-brands fa-twitter fa-xl"></i></span>
+              <span><i class="fa-brands fa-instagram fa-xl"></i></span>
+              <span><i class="fa-brands fa-linkedin fa-xl"></i></span>
+            </p>
+          </div>
+          <button>
+            <a href="./images/my-cv.pdf" download="">Download CV</a>
+          </button>
+        </div>
+        <div class="box-2">
+          <input type="text" name="" id="" placeholder="Your Name" />
+          <input type="text" name="" id="" placeholder="Your Email" />
+          <textarea name="" id="" placeholder="Your Message"></textarea>
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>This Portfolio designed by @Abdul Rafay😍</footer>
+    <script>
+      function opentab(tabName) {
+        var tabContents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < tabContents.length; i++) {
+          tabContents[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+
+      var burgerMenu = document.getElementById("burger-menu");
+      var check = document.getElementById("check");
+      var menu_burger_item = document.getElementById("menu-burger-item");
+
+      burgerMenu.addEventListener("click", function () {
+        check.checked = !check.checked; // Toggle the checked state
+        if (check.checked) {
+          menu_burger_item.style.display = "block"; // Show the menu if the checkbox is checked
+        } else {
+          menu_burger_item.style.display = "none"; // Hide the menu if the checkbox is unchecked
+        }
+      });
+
+      function scrollToSection(txt) {
+        var selected = document.getElementById(txt);
+        selected.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
